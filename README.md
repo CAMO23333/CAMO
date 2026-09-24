@@ -45,6 +45,19 @@ The paper configuration uses four RTX PRO 6000 GPUs, total batch size 8, BF16, a
 
 The CAMO checkpoint is a complete Diffusers pipeline. The dataset release contains the exact train/test data used for the paper.
 
+### Download and extract the CAMO checkpoint
+
+Download `CAMO.zip` and every volume from `CAMO.z01` to `CAMO.z15` from the [v1.0 release](https://github.com/CAMO23333/CAMO/releases/tag/v1.0), and place all files in the repository root. From the repository root, combine the split ZIP and extract it into `pretrained_models/`:
+
+```bash
+zip -s 0 CAMO.zip --out CAMO-full.zip
+unzip -t CAMO-full.zip
+mkdir -p pretrained_models
+unzip CAMO-full.zip -d ./pretrained_models
+```
+
+After extraction, the checkpoint should be at `./pretrained_models/CAMO/`, as expected by the inference and training commands below. Combining the split archive requires additional disk space for the full ZIP.
+
 ## Dataset protocol
 
 Copy the released `datasets/` directory into the repository:
