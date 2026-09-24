@@ -40,8 +40,8 @@ The paper configuration uses four RTX PRO 6000 GPUs, total batch size 8, BF16, a
 | Resource | Path | Source |
 | --- | --- | --- |
 | CogVideoX1.5-5B | `pretrained_models/CogVideoX1.5-5B/` | [Hugging Face](https://huggingface.co/zai-org/CogVideoX1.5-5B) |
-| CAMO checkpoint | `pretrained_models/CAMO/` | [GitHub](https://github.com/CAMO23333/CAMO) |
-| Pre-split datasets | `datasets/` | [GitHub](https://github.com/CAMO23333/CAMO) |
+| CAMO checkpoint | `pretrained_models/CAMO/` | [GitHub](https://github.com/CAMO23333/CAMO/releases) |
+| Pre-split datasets | `datasets/` | [GitHub](https://github.com/CAMO23333/CAMO/releases) |
 
 The CAMO checkpoint is a complete Diffusers pipeline. The dataset release contains the exact train/test data used for the paper.
 
